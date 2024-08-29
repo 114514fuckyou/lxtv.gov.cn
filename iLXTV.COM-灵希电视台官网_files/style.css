@@ -1,0 +1,1916 @@
+/*
+	Theme Name: Cultural Bridge
+	Description: Cultural Bridge WordPress Theme
+	Version: 1.0.2
+	Author: Katiusca Murari, Dalton Silveira
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+	
+	font-family: 'Jaldi Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	color: #707070;
+}
+/* html element 62.5% font-size for REM use */
+html {
+	font-size: 20px;
+}
+body {
+	color:#444;
+}
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+img {
+	max-width:100%;
+	vertical-align:bottom;
+}
+a {
+	color:#444;
+	text-decoration:none;
+}
+a:hover {
+	color:#444;
+}
+a:focus {
+	outline:0;
+}
+a:hover,
+a:active {
+	outline:0;
+}
+input:focus {
+	outline:0;
+	border:1px solid #04A4CC;
+}
+.fas::before{
+	font-family: "Font Awesome 5 Free" !important;
+}
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+.wrapper {
+	max-width:1280px;
+	width:95%;
+	margin:0 auto;
+	position:relative;
+}
+/* header */
+.header {
+	background-color: #2399B1;
+	clear: both;
+	text-align: right;
+}
+/* logo */
+.logo {
+	background-color: #FFFFFF;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding:  10px 15px 15px 15px;
+	display: block;
+	position: absolute;
+	left: 85px;
+	top: -2px;
+	z-index: 2;
+	-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	width: 369px;
+	height: 85px;
+}
+.logo:hover, .logo:focus {
+	-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.65);
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.65);
+}
+/* sidebar */
+.sidebar {
+
+}
+/* footer */
+.footer {
+	margin-top: 20px;
+	background-color: #39AC7E;
+	padding: 10px 20px 15px 60px;
+	color: #fff;
+	font-size: 18px;
+}
+
+.footer .nav a:hover, .footer .nav a:focus {	
+	-webkit-text-shadow: 0px 3px 6px rgba(0,0,0,0.65);
+	-moz-text-shadow: 0px 3px 6px rgba(0,0,0,0.65);
+	text-shadow: 0px 3px 6px rgba(0,0,0,0.65);
+}
+
+.container-fluid{
+	padding: 0px !important;
+}
+
+/*------------------------------------*\
+    STARS
+\*------------------------------------*/
+
+.stars{
+	text-align: center;
+	margin-top: 20px;
+}
+.star{
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 30px;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0px 5px;
+}
+.star.full{
+	background-image: url("/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/img/star_full.png");
+}
+.star.empty{
+	background-image: url("/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/img/star_empty.png");
+}
+
+/*------------------------------------*\
+    HEADER MENU
+\*------------------------------------*/
+
+/* nav */
+.header .div-nav{
+	background-color: #39AC7E !important;
+	min-height: 40px;
+}
+.header .navbar  {
+	background-color: #39AC7E !important;
+	padding: 0px 0px 0px 355px !important;
+	color: #FFF;
+	font-family: 'Jaldi Bold' !important;
+}
+
+.header .navbar a {
+	font-weight: bold;
+	color: #fff !important;
+	padding: 5px 20px !important;
+}
+.header .navbar a:hover, .header .navbar a:focus {	
+	-webkit-text-shadow: 0px 3px 6px rgba(0,0,0,0.65);
+	-moz-text-shadow: 0px 3px 6px rgba(0,0,0,0.65);
+	text-shadow: 0px 3px 6px rgba(0,0,0,0.65);
+}
+
+
+/*------------------------------------*\
+    HEADER SEARCH
+\*------------------------------------*/
+
+.header .search{
+	padding: 20px 70px 20px 0px;
+}
+
+.header .search .search-input{
+	border: 0px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	line-height: 40px;
+	font-size:  18px;
+	padding-left: 20px;
+	padding-right: 0px;
+}
+.header .search .search-submit{
+	background-color: #FFF;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border: 0px;
+	line-height: 40px;
+	float: right;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.header .search .search-submit img{
+	margin-top: -3px;
+}
+.header .search .search-input::placeholder {
+	opacity: 0.6; /* Firefox */
+}
+.header .collapse{
+	padding: 0px !important;
+}
+.header .search.mobile{
+	padding: 0px;
+	background-color: #fff;
+	border-bottom: 1px solid #CCCCCC !important;
+}
+
+.header .search.mobile .search-input{
+	width: calc(100% - 67px);
+}
+
+/*------------------------------------*\
+    HEADER CAROUSEL
+\*------------------------------------*/
+
+.header .carousel .carousel-item .carousel-caption{
+	border-radius: 10px;
+	padding: 10px;
+	text-transform: uppercase;
+	left: 85px;	
+	max-width: 50%;
+	background: rgba(35,153,177,0.64);
+	background: -moz-linear-gradient(top, rgba(35,153,177,0.64) 0%, rgba(57,172,111,0.64) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(35,153,177,0.64)), color-stop(100%, rgba(57,172,111,0.64)));
+	background: -webkit-linear-gradient(top, rgba(35,153,177,0.64) 0%, rgba(57,172,111,0.64) 100%);
+	background: -o-linear-gradient(top, rgba(35,153,177,0.64) 0%, rgba(57,172,111,0.64) 100%);
+	background: -ms-linear-gradient(top, rgba(35,153,177,0.64) 0%, rgba(57,172,111,0.64) 100%);
+	background: linear-gradient(to bottom, rgba(35,153,177,0.64) 0%, rgba(57,172,111,0.64) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2399b1', endColorstr='#39ac6f', GradientType=0 );
+
+	
+	-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+}
+.header .carousel .carousel-item .carousel-caption h5{
+	font-family: 'Jaldi Bold' !important;
+	font-size: 32px !important;
+	margin: 0px;
+}
+.header .carousel .carousel-indicators{
+	margin-left: 0px !important;
+	margin-right: 40px !important;
+	bottom: -5px;
+	left: auto !important;
+}
+.header .carousel .carousel-indicators li{
+	width: 15px;
+	height: 15px;
+	border: 3px solid #FFF;
+	background-color: #FFF;
+	margin-left: 5px;
+	margin-right: 5px;
+
+	-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.27);
+	-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.27);
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.27);
+}
+.header .carousel .carousel-indicators li.active{
+	background-color: #2399B1;
+}
+
+
+/*------------------------------------*\
+    HEADER NEWSLETER
+\*------------------------------------*/
+
+.header .mc4wp-form{
+	text-align: center;
+	padding: 15px 0px;
+	font-size: 22px;
+	color: #FFF;
+}
+.header .mc4wp-form .mc4wp-form-fields{
+	color: #FFF;	
+}
+.header .mc4wp-form .mc4wp-form-fields .field{
+	background-color: #fff;
+	border-radius: 7px;
+	display: inline-block;
+    padding: 5px;
+	font-size: 18px;
+	margin-left: 15px;
+}
+.header .mc4wp-form .mc4wp-form-fields input[type=email] {
+	border: 0px;
+	padding-left: 15px;
+}
+.header .mc4wp-form .mc4wp-form-fields input[type=submit] {  
+	background-color: #39AC7E;  
+    border: 0px;
+	border-radius: 5px;
+	color: #fff;
+	padding: 5px 10px;
+	margin-left: 15px;
+}
+.header .mc4wp-form .mc4wp-form-fields input[type=email]::placeholder {
+	opacity: 0.6; /* Firefox */
+}
+.header .mc4wp-response .mc4wp-notice {
+	margin-top: 1rem;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.header .mc4wp-response p{
+	color: #FFF !important;
+	margin-bottom: 0px;
+}
+
+
+/*------------------------------------*\
+    FOOTER MENU
+\*------------------------------------*/
+
+.footer .navbar-nav{
+	margin-left: 15px;
+	margin-top: 20px;
+	flex-direction: row !important;
+	display: inline-flex;
+}
+
+.footer .navbar-nav a{
+	color: #fff;
+	font-family: 'Jaldi Bold' !important;
+	font-size: 22px;
+}
+
+.footer .navbar-nav li ~ li{
+	padding-left: 40px;
+}
+
+
+/*------------------------------------*\
+    FOOTER SOCIAL ICONS
+\*------------------------------------*/
+.footer .social-icons{
+	clear: both;
+    display: inline-block;
+}
+.footer .social-icon{
+	display:table;
+	border-spacing: 7px 0px;
+	float: left;
+}
+.footer .social-icons a{
+	background-color:  #fff;
+	display: table-cell;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	vertical-align: middle;
+}
+.footer .social-icons a:hover, .footer .social-icons a:focus{
+	-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.65);
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.65);
+}
+.footer .copyright{
+	padding-right: 7px;
+	margin: 0px !important;
+	color: #FFF;
+}
+
+/*------------------------------------*\
+    MIDIA SOCIAL ICONS
+\*------------------------------------*/
+.midia-info .social-icons{
+	clear: both;
+    display: inline-block;
+}
+.midia-info .social-icons img{
+	-webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.midia-info .social-icon{
+	display:table;
+	border-spacing: 3px 0px;
+	float: left;
+}
+.midia-info .social-icons a{
+	display: table-cell;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+}
+.midia-info .social-icon.social-icon-tiktok a{
+	background-image: url("/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/img/tiktok_white.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.midia-info .social-icon.social-icon-tiktok a:hover, .midia-info .social-icon.social-icon-tiktok a:focus {
+	background-image: url("/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/img/tiktok_yellow.png");
+}
+.midia-info .social-icon.social-icon-twitter a{
+	background-image: url("/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/img/twitter_white.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.midia-info .social-icon.social-icon-twitter a:hover, .midia-info .social-icon.social-icon-twitter a:focus {
+	background-image: url("/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/img/twitter_yellow.png");
+}
+.midia-info .social-icon.social-icon-youtube a{
+	background-image: url("/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/img/youtube_white.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.midia-info .social-icon.social-icon-youtube a:hover, .midia-info .social-icon.social-icon-youtube a:focus {
+	background-image: url("/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/img/youtube_yellow.png");
+}
+.midia-info .social-icon.social-icon-instagram a{
+	background-image: url("/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/img/instagram_white.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.midia-info .social-icon.social-icon-instagram a:hover, .midia-info .social-icon.social-icon-instagram a:focus {
+	background-image: url("/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/img/instagram_yellow.png");
+}
+.midia-info .social-icon.social-icon-facebook a{
+	background-image: url("/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/img/facebook_white.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.midia-info .social-icon.social-icon-facebook a:hover, .midia-info .social-icon.social-icon-facebook a:focus {
+	background-image: url("/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/img/facebook_yellow.png");
+}
+
+/*------------------------------------*\
+    POPULAR POSTS
+\*------------------------------------*/
+
+.popular-posts a, .popular-posts a:hover, .popular-posts a:focus{
+	text-decoration: none;
+    position: relative;
+}
+
+.popular-posts .position{
+	line-height: 40px;
+	font-family: 'Jaldi Bold' !important;
+	font-size: 32px;
+	color: #fff;
+	background-color: #2399B1;
+	position: absolute;
+	float: left;
+	text-align: center;
+	width: 57px;
+	z-index: 1;
+	height: 53px;
+	left: -1px;
+	top: 2px;
+}
+
+.popular-posts img{
+	position: relative;
+	-webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.25);
+	box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.25);
+}
+.popular-posts a:hover img{
+	position: relative;
+	-webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.65);
+	-moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.65);
+	box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.65);
+}
+
+.popular-post .name{
+    font-size: 20px;
+    color: #FFF;
+    background-color: #39AC7E;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    border-radius: 6px;
+    padding: 5px 15px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    bottom: 7px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+	width: calc(100% - 20px);
+
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.popular-post{
+	/*display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	float: left;*/
+
+	display: table-cell;
+	vertical-align: bottom;
+	
+}
+
+/*------------------------------------*\
+    PAGES - MIDIA
+\*------------------------------------*/
+
+.midia-info{
+	background-color: #2399B1;
+	color: #FFF !important;
+	font-size: 18px;
+	padding: 35px 150px 45px 50px;
+	padding-top: 35px;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+ .midia-info *{
+	color: #FFF !important;
+}
+
+.midia-info .poster img{
+	-webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.25);
+	box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.25);
+}
+
+.recomencoes{
+	background-color: #2399B1;
+	padding: 40px 0px;
+}
+
+.recomencoes *{
+	color: #FFF !important;
+}
+
+.yarpp-related{
+	margin: 0px !important;
+}
+
+.info-content{
+	position: relative;
+	text-overflow: ellipsis;
+    white-space: normal;
+	overflow: hidden;
+	max-height: 82px;
+}
+.info-content.active{
+	overflow: none !important;
+	max-height: 100% !important;
+}
+.content-read-more{
+	background-color: #39AC7E;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 6px;
+	padding: 0px 15px;
+	cursor: pointer;
+}
+.content-read-more:hover, .content-read-more:focus{
+	background-color: #24825C;
+}
+.episode-info > div:not(.info-content) {
+	text-align: right !important;
+}
+.episode-info .content-read-more{
+	background-color: #2399B1;
+}
+
+/*------------------------------------*\
+    PAGES - EPISODE
+\*------------------------------------*/
+
+.col-episode{
+	padding-right: 30px !important;
+}
+.col-next-episodes{
+	background-color: #2399B1;
+	color: #FFF	!important;
+	padding: 30px 60px !important;
+}
+.col-next-episodes.episodes a{
+	display: inline-block;
+	width: 100%;
+}
+.col-next-episodes.episodes a~a{
+	margin-left: 0px !important;
+	margin-bottom: 0px !important;
+	margin-top: 30px !important;
+}
+.col-next-episodes.episodes .name{
+	color: #FFF	!important;
+}
+.episode-btns{
+	width: 100%;
+	margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.btn-episode, .btn-episode:hover, .btn-episode:visited, .btn-episode:focus {
+	font-family: 'Jaldi Bold' !important;
+	font-size: 24px;
+	text-align: center;
+	padding: 5px;
+	text-transform: uppercase;
+
+	text-decoration: none;
+	background-color: #2399B1;
+	color: #FFF;
+	display: inline-block;
+	width: calc((100% - 20px) / 3);
+	margin: 10px 10px 0px 0px;
+	margin: 0px;
+    position: relative;
+    float: left;
+}
+.btn-prev{
+	background-image: url("/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/img/prev.png");
+	background-repeat: no-repeat;
+    background-position: 10px center;
+	padding-left: 45px !important;
+}
+.btn-next{
+	background-image: url("/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/img/next.png");
+	background-repeat: no-repeat;
+    background-position: right 10px center;
+	padding-right: 45px !important;
+	margin-left: 10px !important;
+}
+.btn-share{
+	background-image: url("/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/img/share.png");
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	padding-left: 45px !important;
+	margin-left: 10px !important;
+}
+.episode-info{
+	background-color: #DCDCDC;
+	color: #707070;
+	font-size: 18px;
+	padding: 15px 30px;
+}
+.episode-info p:last-child{
+	margin-bottom: 0px;
+}
+.btn-disable{
+	background-color: #08414D !important;
+	pointer-events: none;
+	cursor: default;
+}
+
+.episode-info .content-read-more:hover, .episode-info .content-read-more:focus{
+	background-color: #08414D ;
+}
+
+/*------------------------------------*\
+    FORM COMENTS
+\*------------------------------------*/
+
+.comment-form .comment-notes, .comment-form .comment-form-cookies-consent{
+	display: none !important;
+}
+
+.comment-form {    
+	display: inline-block;
+    width: 100%;
+}
+.comment-form input, .comment-form textarea{
+	background-color: #F8F8F8;
+	border: 2px solid #E8E8E8;
+	padding: 10px 20px;	
+	color: #707070;
+	width: 100%;
+	resize: none;
+}
+.comment-form button[type=submit]{
+	background-color: #2399B1;
+	border: 0px;
+	padding: 10px 20px;	
+	color: #fff;
+	width: 100%;
+	font-size: 24px;
+}
+.comment-form button[type=submit] img{
+	margin-left: 5px;;
+}
+
+.type-midia .comment-form p{
+	width: 50%;
+	position: relative;
+	float: left;
+	margin: 0px;
+}
+
+.type-midia .comment-form p.logged-in-as{
+	width: 100%;
+}
+
+
+
+.type-midia .comment-form-comment{
+	padding-right: 10px;
+    margin-bottom: 1rem !important;
+
+}
+.type-midia .comment-form-author,
+.type-midia .comment-form-email,
+.type-midia .form-submit{
+	padding-left: 10px;
+    margin-bottom: 1rem !important;
+}
+
+
+/*------------------------------------*\
+    EPISODES
+\*------------------------------------*/
+
+.episodes .row a{
+	display: inline-block;
+	width: 100%;
+}
+.episodes a:hover, .episodes a:focus, .episodes a:visited{
+	text-decoration: none;
+}
+
+.episodes a ~ a{
+	margin-left: 35px;
+	margin-bottom: 40px;
+}
+
+.episodes a img{
+	border-radius: 8px;
+	width: 100%;
+	-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+}
+.episodes a:hover img{
+	-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.65);
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.65);
+}
+.episodes .episode_thumb{
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.episodes a .play{
+	background-image: url("/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/img/episode-play.png");
+	width: 47px;
+	height: 47px;
+	opacity: 75%;
+	
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+.episodes a:hover .play{
+	background-image: url("/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/img/episode-play-hover.png");
+	opacity: 100%;
+}
+
+.episodes a .cat{
+	position: absolute;
+	float: right;
+	right: 7px;
+	top: 7px;
+
+	background-color: #2399B1;
+	color: #fff;
+	border-radius: 4px;
+	padding: 0px 10px;
+}
+
+.episodes a .num{
+	position: absolute;
+	float: right;
+	right: 7px;
+	bottom: 7px;
+
+	background-color: #39AC7E;
+	color: #fff;
+	border-radius: 4px;
+	padding: 2px 10px 0px 10px;
+
+	font-family: 'Jaldi Bold' !important;
+	font-size: 16px;
+}
+
+.episodes a .name{
+	font-family: 'Jaldi Bold' !important;
+	font-size: 28px;
+	line-height: 28px;
+	
+	display: block;
+	position: relative !important;
+	overflow: hidden !important;
+	max-height: 84px !important;
+}
+
+
+/*------------------------------------*\
+	PAGE CONTATO
+\*------------------------------------*/
+
+.wpcf7 input, .wpcf7 textarea{
+	background-color: #F8F8F8;
+	border: 2px solid #E8E8E8;
+	padding: 10px 20px;	
+	color: #707070;
+	width: 100%;
+	resize: none;
+}
+.wpcf7 button[type=submit]{
+	background-color: #2399B1;
+	border: 0px;
+	padding: 10px 20px;	
+	color: #fff;
+	width: 100%;
+	font-size: 24px;
+}
+
+
+.wpcf7 button[type=submit]:hover, .wpcf7 button[type=submit]:focus{
+	-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.65);
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.65);
+}
+
+.wpcf7 button[type=submit] .icon-send{
+	margin-left: 5px;
+	background-image: url("/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/img/send.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+}
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+@font-face {
+	font-family: 'Jaldi Regular';
+	src:  url('/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/fonts/Jaldi-Regular.woff2') format('woff2'),
+		  url('/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/fonts/Jaldi-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Jaldi Bold';
+	src:  url('/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/fonts/Jaldi-Bold.woff2') format('woff2'),
+		  url('/web/20220424053831im_/http://www.cbmidia.tv/wp-content/themes/culturalbridge/fonts/Jaldi-Bold.woff') format('woff');
+}
+
+h1, h1 a{
+	font-family: "Jaldi Bold" !important;
+	font-size: 32px !important;
+	color: #707070;	
+}
+h1 a:hover,h1 a:focus{
+	text-decoration: none;
+	color: #39AC7E;	
+}
+h1::after{
+	font-family: "Font Awesome 5 Free" !important;
+	content: "\f054";
+	color: #39AC7E;
+	font-weight: bold;
+    font-size: 28px;
+    margin-left: 10px; 
+    position: relative;
+    top: 2px;
+}
+h2{
+	font-family: "Jaldi Bold" !important;
+	font-size: 32px !important;
+	color: #fff !important;
+}
+h2::after{
+	font-family: "Font Awesome 5 Free" !important;
+	content: "\f054";
+	color: #fff;
+	font-weight: bold;
+    font-size: 28px;
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+}
+
+
+		
+/*------------------------------------*\
+	POPULAR POSTS
+\*------------------------------------*/
+.popular-posts{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.popular-posts .row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.popular-posts .col{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.popular-posts .col-auto{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.popular-posts-carousel-next, .popular-posts-carousel-prev {	
+	position: static !important;
+}
+.popular-posts-carousel-prev .fas::before, .popular-posts-carousel-next .fas::before{
+	color: #39AC7E;
+}
+.popular-posts-carousel-next i, .popular-posts-carousel-prev i{	
+	color: #39AC7E;
+	font-weight: bold;
+	font-size: 28px;
+
+	display: inline-block;
+	position: relative;
+	top: calc(50% - 30px);
+}
+.popular-posts .carousel-item-next, .popular-posts .carousel-item-prev, .popular-posts .carousel-item.active {
+    display: block;
+    transition: none !important;
+    transition: none !important;
+    transition: none !important;
+}
+
+
+/*------------------------------------*\
+	PAGINA SOBRE
+\*------------------------------------*/
+
+.page-sobre .container-fluid{
+	margin-top: -0.9rem!important;
+}
+.page-sobre .row{
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+.page-sobre .info{
+	background-color: #F1F1F1;
+}
+
+.page-sobre .col-image{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.page-sobre .col-text{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.page-sobre .btn-contato, .page-sobre .btn-contato:hover, .page-sobre .btn-contato:focus, .page-sobre .btn-contato:visited {
+	background-color: #2399B1;
+	color: #fff;
+	text-decoration: none;
+	font-size: 24px;
+	padding: 10px 50px;
+}
+
+.page-sobre .btn-contato:hover, .page-sobre .btn-contato:focus {
+	-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.65);
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.65);
+}
+
+.page-sobre .col-image span{
+	font-family: 'Jaldi Bold' !important;
+	font-size: 28px;
+
+}
+
+.page-sobre .col-image span::after {
+    font-family: "Font Awesome 5 Free" !important;
+    content: "\f054";
+    color: #39AC7E;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.page-sobre .col-titulo h1{
+	margin-top: 10px;
+}
+
+.page-sobre .col-titulo h1::after{
+	display: none;
+}
+.page.sobre .container-fluid{	
+    margin-bottom: -1.5rem;
+    margin-top: 0.25rem !important;
+}
+
+/*------------------------------------*\
+    PAGE POPULARES
+\*------------------------------------*/
+
+.page-populares .nav-links{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 60px;
+}
+
+.page-populares .nav-links .page-numbers{
+	font-family: 'Jaldi Bold' !important;
+	font-size: 28px;
+	display: inline-block;
+	background-color: #2399B1;
+	color: #fff !important;
+	padding: 0px 20px;
+    line-height: 38px;
+}
+.page-populares .nav-links .page-numbers ~ .page-numbers{
+	margin-left: 7px;
+	margin-bottom: 7px;
+}
+.page-populares .nav-links .nav-prev-text{
+	color: #fff !important;
+	font-family: 'Jaldi Bold' !important;
+	font-size: 28px;
+}
+
+.page-populares .nav-links a:hover, .page-populares .nav-links a:focus,
+.page-populares .nav-links > span:hover, .page-populares .nav-links > span:focus
+{
+	text-decoration: none;
+	background-color: #08414D !important;
+}
+
+/*------------------------------------*\
+    PAGE SEARCH
+\*------------------------------------*/
+
+.pagination {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: inline-block !important;
+}
+.pagination .page-numbers{
+	font-family: 'Jaldi Bold' !important;
+	font-size: 28px;
+	display: inline-block;
+	background-color: #2399B1;
+	color: #fff !important;
+	padding: 0px 20px;
+    line-height: 38px;
+	margin-bottom: 7px;
+}
+.pagination .page-numbers:hover, .pagination .page-numbers:focus{
+	text-decoration: none;
+	background-color: #08414D !important;
+}
+.pagination .page-numbers ~ .page-numbers{
+	margin-left: 7px;
+}
+.pagination .page-numbers.current{    
+	background-color: #08414D !important;
+    pointer-events: none;
+    cursor: default;
+}
+
+
+/*------------------------------------*\
+    PAGE EXPLORAR
+\*------------------------------------*/
+
+.row.lista-alpha{
+	margin-left: -5px;
+	margin-right: -5px;
+	margin-bottom: 40px;
+}
+.lista-alpha .col-char{
+	padding-left: 5px;
+	padding-right: 5px;
+	
+    -ms-flex: 0 0 11.1111111%;
+    flex: 0 0 11.1111111%;
+    max-width: 11.1111111%;
+}
+.lista-alpha .col-char a{
+	font-family: 'Jaldi Bold' !important;
+	font-size: 24px;
+	text-align: center;
+	background-color: #2399B1;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.lista-alpha .col-char a.active, .lista-alpha .col-char a:hover, .lista-alpha .col-char a:focus{
+	background-color: #08414D !important;
+	text-decoration: none;
+}
+
+.col-categoria a{
+	font-family: 'Jaldi Bold' !important;
+	font-size: 28px;
+	display: inline-block;
+	width: 100%;
+	background-color: #39AC7E;
+	color: #fff !important;
+	text-align: center;
+	padding: 0px 20px;
+}
+
+.col-categoria a.active, .col-categoria a:hover, .col-categoria a:focus{
+	text-decoration: none;
+	background-color: #24825C !important;
+}
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+.col-tab-episode {
+    -ms-flex: 0 0 20% !important;
+    flex: 0 0 20% !important;
+	max-width: 20% !important;
+}
+
+
+/* LG - Large */
+@media only screen and (max-width:1199px) {
+	
+	/*------------------------------------*\
+		PAGES - EPISODE
+	\*------------------------------------*/
+
+	.btn-episode, .btn-episode:hover, .btn-episode:visited, .btn-episode:focus {
+		font-size: 18px;
+	}
+}
+/* MD - Medium */
+@media only screen and (max-width:991px) {	
+
+	.col-tab-episode {
+		-ms-flex: 33.333333% !important;
+		flex: 33.333333% !important;
+		max-width: 33.333333% !important;
+	}
+
+	/*------------------------------------*\
+		PAGES - EPISODE
+	\*------------------------------------*/
+	.btn-episode, .btn-episode:hover, .btn-episode:visited, .btn-episode:focus {
+		width: 100%;
+		margin: 0px 0px 10px 0px !important;
+		padding: 5px !important;
+	}
+
+	.col-next-episodes{
+		padding: 15px 30px !important;
+	}
+	.col-next-episodes h2{
+		font-size: 28px !important;
+	}
+
+
+	/*------------------------------------*\
+		HEADER
+	\*------------------------------------*/
+	.logo {
+		left: 55px;
+		top: 0px;
+		z-index: 2;
+
+		-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+		-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+		box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	}
+
+
+	/*------------------------------------*\
+		HEADER MENU
+	\*------------------------------------*/
+	/* nav */
+	.header .navbar  {
+		padding: 0px 0px 0px 295px !important;
+	}
+
+	.header .navbar a {
+		padding: 5px 15px !important;
+	}
+		
+
+	/*------------------------------------*\
+		HEADER CAROUSEL
+	\*------------------------------------*/
+
+	.header .carousel .carousel-item .carousel-caption{
+		left: 55px;	
+		max-width: 60%;
+	}
+	.header .carousel .carousel-item .carousel-caption h5{
+		font-size: 26px !important;
+	}
+
+
+	/*------------------------------------*\
+		FOOTER
+	\*------------------------------------*/
+			
+	.footer {
+		padding: 10px 20px 15px ;
+	}
+
+	.footer .navbar-nav{
+		margin-left: 0px;
+	}
+	
+	.footer .navbar-nav a{
+		font-size: 20px;
+	}
+	
+	.footer .navbar-nav li ~ li{
+		padding-left: 15px;
+	}
+			
+	.footer .copyright{
+		font-size: 16px;
+	}
+
+
+	/*------------------------------------*\
+		PAGES - MIDIA
+	\*------------------------------------*/
+	.midia-info {
+		padding: 25px 40px !important ;
+	}
+
+
+	/*------------------------------------*\
+		PAGE EXPLORAR
+	\*------------------------------------*/
+	
+	.col-categoria a{
+		font-size: 24px;
+	}
+		
+	.lista-alpha .col-char{
+		padding-left: 5px;
+		padding-right: 5px;
+		
+		-ms-flex: 0 0 12.5%;
+		flex: 0 0 12.5%;
+		max-width: 12.5%;
+	}
+
+	.lista-alpha .col-char.all{
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%;
+	}	
+	
+}
+/* SM - Small */
+@media only screen and (max-width:767px) {
+	.col-tab-episode {
+		-ms-flex: 50% !important;
+		flex: 50% !important;
+		max-width: 50% !important;
+	}
+
+	/*------------------------------------*\
+		PAGE POPULARES
+	\*------------------------------------*/
+
+	.page-populares .nav-links .page-numbers{
+		font-size: 24px;
+		line-height: 38px;
+		padding: 0px 15px;
+	}
+	.page-populares .nav-links .nav-prev-text{
+		font-size: 24px;
+	}
+
+	/*------------------------------------*\
+		POPULAR POSTS
+	\*------------------------------------*/
+	.popular-posts-carousel .popular-posts .col-6:nth-child(n+3){
+		display: none;
+	}
+
+	/*------------------------------------*\
+		PAGES - EPISODE
+	\*------------------------------------*/
+	.col-next-episodes{
+		margin-top: 20px;
+	}
+	.col-episode{
+		padding-right: 25px !important;
+		padding-left: 25px !important;
+	}
+	.row-episodes{
+		margin-right: -25px !important;
+		margin-left: -25px !important;
+	}
+
+
+	/*------------------------------------*\
+		TYPOGRAPHY
+	\*------------------------------------*/
+
+	h1, h2{
+		font-size: 28px !important;
+	}
+
+	/*------------------------------------*\
+		HEADER
+	\*------------------------------------*/
+	.header{
+		text-align: left;
+	}
+
+	.logo img{
+		width: 100px;
+	}
+
+	.logo {
+		position: absolute;
+		left: 50%;
+		margin-left: -60px;
+		top: 0px;
+		padding:  10px;
+	}
+	.popular-post .name{
+		padding: 5px !important;
+		font-size: 18px;
+	}
+	
+
+	/*------------------------------------*\
+		HEADER MENU
+	\*------------------------------------*/
+
+	.header .hamburger{
+		position: relative;
+		background-color: transparent;
+		display: inline-block !important;
+		border: 0px;
+		padding: 10px !important;
+		left: 35px;
+		top: 25px;
+		color: #fff;
+	}
+	
+	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+		background-color: #FFF !important;
+	}
+
+	.header .search-mobile{
+		position: relative;
+		float: right;
+		background-color: transparent;
+		padding: 10px;
+		border: 0px;
+		right: 35px;
+		top: 20px;
+	}
+
+	.header form.search:not(.mobile){
+		display: none;
+	}	
+	
+
+	.header .mobile-options{
+		min-height: 90px;
+	}
+
+	.header .navbar{
+		padding: 0px !important;
+	}
+
+	.header .navbar-collapse{
+		margin-top: 40px;
+	}
+
+	.header .navbar li{
+		background-color: #CCCCCC;
+		color: #676767;
+		text-align: center;
+		text-transform: uppercase;
+		border-bottom: 4px solid #fff;
+		font-size: 16px;
+	}
+
+	.header .navbar li a{
+		color: #676767 !important;
+		padding: 8px 15px !important;
+	}
+	.header .navbar li a:hover, .header .navbar li a:focus{
+		color: #39AC7E !important;
+		-webkit-text-shadow: none;
+		-moz-text-shadow: none;
+		text-shadow: none;
+	}
+	
+
+	/*------------------------------------*\
+		HEADER CAROUSEL
+	\*------------------------------------*/
+
+	.header .carousel .carousel-item .carousel-caption{
+		max-width: 100% !important;
+		left: 10px !important;
+		right: 10px !important;
+		bottom: 5px !important;
+	}
+
+	.header .carousel .carousel-item .carousel-caption h5{
+		font-size: 22px !important;
+	}
+
+	.header .carousel .carousel-indicators{
+		display: none;
+	}
+
+
+	/*------------------------------------*\
+		HEADER NEWSLETER
+	\*------------------------------------*/
+
+	.header .mc4wp-form{
+		line-height: 22px;
+	}
+	.header .mc4wp-form .mc4wp-form-fields .field{
+		margin-top: 10px;
+		margin-left: 0px;
+	}
+
+
+	/*------------------------------------*\
+		FOOTER
+	\*------------------------------------*/
+	.footer .col-logo{
+		text-align: center;
+		width: 100%;
+	}
+
+	.footer .col-social{
+		text-align: center !important;
+		margin-top: 20px;
+	}
+
+	.footer .copyright{
+		font-size: 18px !important;;
+	}
+	
+
+	/*------------------------------------*\
+		FORM COMENTS
+	\*------------------------------------*/
+
+	.type-midia .comment-form p{
+		width: 100%;
+		position: initial;
+		margin: 0px;
+		padding: 0px !important;
+	}
+	
+
+	/*------------------------------------*\
+		PAGES - MIDIA
+	\*------------------------------------*/
+	.midia-info {
+		padding: 25px 40px !important ;
+		margin-left: -30px !important ;
+		margin-right: -30px !important ;
+	}
+	.midia-info .col-12{
+		max-width: 540px !important;
+	}
+	.container-midia{
+		max-width: 100% !important;
+	}
+
+	.midia-info .col-12 ~ .col-12{
+		padding-top: 30px;
+	}
+
+		
+	/*------------------------------------*\
+		PAGINA SOBRE
+	\*------------------------------------*/
+	.page-sobre .col-image{
+		padding-bottom: 10px;
+	}
+
+	.page-sobre .col-text{
+		padding-top: 10px;
+		padding-bottom: 30px;
+	}
+
+	.page-sobre .btn-contato{
+		padding: 10px !important;
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+
+
+
+	h1.not-avialable{
+		text-align: center;
+		margin-top: 1.5rem;
+		margin-bottom: 1rem;
+	}
+}
+/* Extra Small */
+@media only screen and (max-width:576px) {
+
+	.lista-alpha .col-char{
+		-ms-flex: 0 0 14.285714%;
+		flex: 0 0 14.285714%;
+		max-width: 14.285714%;
+	}
+
+	.lista-alpha .col-char.all{
+		-ms-flex: 0 0 28.571428%;
+		flex: 0 0 28.571428%;
+		max-width: 28.571428%;
+	}
+	
+	/*------------------------------------*\
+		PAGES - EPISODE
+	\*------------------------------------*/
+	.col-next-episodes{
+		padding: 15px 25px !important;
+	}
+	.col-episode{
+		padding-right: 15px !important;
+		padding-left: 15px !important;
+	}
+	.row-episodes{
+		margin-right: -15px !important;
+		margin-left: -15px !important;
+	}
+
+
+	/*------------------------------------*\
+		HEADER CAROUSEL
+	\*------------------------------------*/
+	.header .carousel .carousel-item .carousel-caption h5{
+		font-size: 16px !important;
+	}
+
+
+	/*------------------------------------*\
+		HEADER MENU
+	\*------------------------------------*/
+
+	.header .hamburger{
+		left: 15px;
+	}
+
+	.header .search-mobile{
+		right: 15px;
+	}
+
+
+	/*------------------------------------*\
+		PAGES - MIDIA
+	\*------------------------------------*/
+	.midia-info{
+		padding: 25px 10px !important ;
+		margin-left: -15px !important;
+		width: calc(100% + 30px);
+	}
+
+
+	/*------------------------------------*\
+		INDEX - POPULAR POSTS
+	\*------------------------------------*/
+
+	.popular-posts .carousel-item .col-6{
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+
+	.popular-posts-carousel-next i, .popular-posts-carousel-prev i{
+		font-size: 20px;
+	}
+
+
+	.comments ul:not(.children){
+		padding-inline-start: 0px !important;
+		padding: 0px !important;
+	}
+
+
+
+	h1.not-avialable span{
+		width: 100%;
+	}
+	h1.not-avialable span ~ span{
+		margin-top: -1px !important;
+	}
+}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+
+.alignnone {
+	margin:5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+a img.alignnone {
+	margin:5px 20px 20px 0;
+}
+a img.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.wp-caption {
+	background:#FFF;
+	border:1px solid #F0F0F0;
+	max-width:96%;
+	padding:5px 3px 10px;
+	text-align:center;
+}
+.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin:5px 0 20px 20px;
+}
+.wp-caption img {
+	border:0 none;
+	height:auto;
+	margin:0;
+	max-width:98.5%;
+	padding:0;
+	width:auto;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font-size:11px;
+	line-height:17px;
+	margin:0;
+	padding:0 4px 5px;
+}
+.sticky {
+
+}
+.bypostauthor {
+
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+	* {
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
+	}
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+	a[href]:after {
+		content:" (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content:" (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content:"";
+	}
+	pre,blockquote {
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	thead {
+		display:table-header-group;
+	}
+	tr,img {
+		page-break-inside:avoid;
+	}
+	img {
+		max-width:100% !important;
+	}
+	@page {
+		margin:0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
+}
+
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+
+.comment{
+	position: relative;
+}
+.comment, .comment-list {
+	list-style: none;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+.comment .says{
+	display: none;
+}
+.comment-header .avatar{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 60px;
+    width: 60px;
+}
+.comment-author .fn, .comment-author .fn a{
+	font-family: 'Jaldi Bold' !important;
+	text-transform: uppercase;
+	color: #707070;
+	font-size: 24px;
+	text-decoration: none;
+}
+.comment-author .fn a:hover,.comment-author .fn a:focus{
+	color: #39AC7E;
+}
+.comment-meta a{
+	font-size: 18px;
+	color: #707070;
+	text-decoration: none;
+}
+.comment-meta a:hover, .comment-meta a:focus{
+	color: #39AC7E;
+	text-decoration: none;
+}
+.comment-header  {
+    line-height: 1.3;
+    min-height: 70px;
+    padding-left: 75px;
+    position: relative;
+}
+.comment-edit-link::before{
+	content: " • "
+}
+.comment-reply-link{
+	color: #707070;
+	font-family: 'Jaldi Bold' !important;
+	font-size: 20px;
+}
+.comment-reply-link:hover, .comment-reply-link:focus{
+	color: #39AC7E;
+	text-decoration: none;
+}
+.comment-reply-link::after{
+	font-family: "Font Awesome 5 Free" !important;
+	content: "\f054";
+	color: #39AC7E;
+	font-weight: bold;
+    font-size: 20px;
+    margin-left: 7px; 
+    position: relative;
+    top: 2px;
+}
+
+#cancel-comment-reply-link{
+	text-transform: uppercase;
+}
+
+#cancel-comment-reply-link::before{
+	content: " • "
+}
+
+h1.not-avialable span{
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white !important;
+	background-color: #2399B1;
+	display: inline-block;
+    font-size: 34px;
+    padding: 3px 10px;
+    margin: auto;
+    vertical-align:middle;
+}
+h1.not-avialable span ~ span{
+	margin-top: 3px;
+}
+h1.not-avialable::after{
+	content: "";
+}
+.page-not-avialable .container-fluid{
+	margin-top: -1.5rem!important;
+	padding-top: 2rem!important;
+	padding-bottom: 2rem!important;
+	margin-bottom: -1.5rem!important;
+
+}
+.page-not-avialable{
+	background-color: #F1F1F1;
+}
+/*
+     FILE ARCHIVED ON 05:38:31 Apr 24, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:38:43 Jul 02, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 208.891
+  exclusion.robots: 91.718
+  exclusion.robots.policy: 91.706
+  xauthn.identify: 58.92
+  xauthn.chkprivs: 32.555
+  cdx.remote: 0.065
+  esindex: 0.007
+  LoadShardBlock: 91.323 (3)
+  PetaboxLoader3.datanode: 54.336 (4)
+  CDXLines.iter: 16.876 (3)
+  load_resource: 39.47
+  PetaboxLoader3.resolve: 22.681
+*/
